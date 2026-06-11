@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digi'Tran — Formations IA &amp; applications sur mesure en Suisse romande</title>
+  <meta name="description" content="Digi'Tran aide les entreprises de Suisse romande à gagner du temps grâce à l'IA : formations pratiques pour vos équipes et applications métier développées sur mesure. Conçu en Suisse, sans jargon.">
+  <link rel="canonical" href="https://digitran.ch/">
+  <meta name="theme-color" content="#1F2A52">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:title" content="Digi'Tran — L'IA au service des entreprises romandes">
+  <meta property="og:description" content="Formations IA pratiques et applications sur mesure. Votre temps vaut mieux que vos tâches répétitives. Conçu en Suisse romande.">
+  <meta property="og:url" content="https://digitran.ch/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Digi'Tran",
+    "description": "Formations IA pour entreprises et développement d'applications et SaaS sur mesure en Suisse romande.",
+    "email": "contact@digitran.ch",
+    "url": "https://digitran.ch",
+    "areaServed": ["Genève", "Vaud", "Valais", "Fribourg", "Neuchâtel", "Jura", "Suisse romande"],
+    "knowsAbout": ["Intelligence artificielle", "Formation IA", "Développement SaaS", "Automatisation", "Applications métier"],
+    "priceRange": "Sur devis"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== Préloader ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <svg class="pre-logo" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+        <defs>
+          <mask id="cut-pre">
+            <rect width="512" height="512" fill="#fff"/>
+            <line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/>
+          </mask>
+        </defs>
+        <path class="pre-d" fill="currentColor" fill-rule="evenodd" mask="url(#cut-pre)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+        <line class="pre-arrow" x1="100" y1="438" x2="269" y2="269" stroke="currentColor" stroke-width="27"/>
+        <path class="pre-head" fill="currentColor" d="M314 224 243 244l51 51z"/>
+        <circle class="pre-dot" cx="448" cy="96" r="40" fill="#E03A2B"/>
+      </svg>
+      <p class="pre-word" aria-hidden="true">
+        <span>D</span><span>i</span><span>g</span><span>i</span><span class="pre-apo">'</span><span>T</span><span>r</span><span>a</span><span>n</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== Curseur personnalisé (desktop) ===== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ===== Barre de progression ===== -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Digi'Tran — retour à l'accueil">
+        <svg class="logo-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+          <defs>
+            <mask id="cut-nav">
+              <rect width="512" height="512" fill="#fff"/>
+              <line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/>
+            </mask>
+          </defs>
+          <path fill="currentColor" fill-rule="evenodd" mask="url(#cut-nav)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+          <line x1="100" y1="438" x2="269" y2="269" stroke="currentColor" stroke-width="27"/>
+          <path fill="currentColor" d="M314 224 243 244l51 51z"/>
+          <circle class="logo-dot" cx="448" cy="96" r="40" fill="#E03A2B"/>
+        </svg>
+        <span class="brand-name">Digi'Tran</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#methode">Méthode</a></li>
+        <li><a href="#confiance">Confiance</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-nav magnetic" href="#contact">Parlons-en</a>
+        <button class="nav-burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Menu mobile ===== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Menu mobile">
+      <ul>
+        <li style="--i:0"><a href="#services">Services</a></li>
+        <li style="--i:1"><a href="#realisations">Réalisations</a></li>
+        <li style="--i:2"><a href="#methode">Méthode</a></li>
+        <li style="--i:3"><a href="#confiance">Confiance</a></li>
+        <li style="--i:4"><a href="#faq">FAQ</a></li>
+        <li style="--i:5"><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="mobile-menu-foot">contact@digitran.ch · Suisse romande</p>
+    </nav>
+  </div>
+
+  <main id="contenu">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-navy"></div>
+        <div class="orb orb-red"></div>
+        <div class="orb orb-blue"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-badge reveal" style="--d:.05s">
+            <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+            Conçu en Suisse romande
+          </p>
+
+          <h1 class="hero-title">
+            <span class="line"><span>Votre temps vaut</span></span>
+            <span class="line"><span>mieux que <span class="swap-wrap"><span class="swap-word" id="swap-word">vos copier-coller</span></span></span></span>
+          </h1>
+
+          <p class="hero-sub reveal" style="--d:.5s">
+            Digi'Tran forme vos équipes à l'intelligence artificielle et développe
+            des applications sur mesure qui automatisent vos tâches répétitives.
+            Pensé, construit et accompagné ici, en Suisse romande.
+          </p>
+
+          <div class="hero-ctas reveal" style="--d:.65s">
+            <a class="btn btn-primary btn-lg magnetic" href="#contact">
+              Parlons de votre projet
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+            </a>
+            <a class="btn btn-ghost btn-lg magnetic" href="#realisations">Voir nos réalisations</a>
+          </div>
+
+          <ul class="hero-trust reveal" style="--d:.8s">
+            <li>Premier échange offert</li>
+            <li>Réponse sous 24 h</li>
+            <li>Sans jargon technique</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="float-card card-doc" data-depth="14">
+            <div class="fc-head"><span class="fc-pill fc-pill-navy">LESO · Bureau d'études</span></div>
+            <p class="fc-title">Justificatif thermique SIA&nbsp;380/1</p>
+            <div class="fc-bar"><span></span></div>
+            <ul class="fc-checks">
+              <li>Géométrie extraite des plans</li>
+              <li>Calculs préparés</li>
+              <li>Rapport PDF généré — 4 min</li>
+            </ul>
+          </div>
+
+          <div class="float-card card-chat" data-depth="26">
+            <p class="fc-q">« Résume ces 12 PV de chantier et liste les points bloquants. »</p>
+            <div class="fc-a"><span class="fc-spark"></span>12 documents analysés · 3 points bloquants identifiés</div>
+          </div>
+
+          <div class="float-card card-plan" data-depth="20">
+            <div class="fc-head"><span class="fc-pill fc-pill-red">Tournoi U13 · 24 équipes</span></div>
+            <ul class="fc-matches">
+              <li><b>09:00</b> Terrain A — Aigle · Vevey</li>
+              <li><b>09:25</b> Terrain B — Sion · Bulle</li>
+              <li><b>09:50</b> Terrain A — Nyon · Morges</li>
+            </ul>
+            <p class="fc-ok">Planning optimisé — 0 conflit</p>
+          </div>
+
+          <div class="float-chip chip-a" data-depth="34">− 40 % de rédaction</div>
+          <div class="float-chip chip-b" data-depth="40">
+            <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+            Données hébergées en Suisse
+          </div>
+          <div class="float-chip chip-c" data-depth="30">+ 1 h par jour</div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#impact" aria-label="Faire défiler vers la section suivante">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ===== Bandeau défilant ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Formations IA</span><i></i>
+          <span>Applications sur mesure</span><i></i>
+          <span>SaaS B2B</span><i></i>
+          <span>Automatisation de documents</span><i></i>
+          <span>Plannings intelligents</span><i></i>
+          <span>Assistants métier</span><i></i>
+          <span>Analyse de données</span><i></i>
+          <span>Suisse romande</span><i></i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Formations IA</span><i></i>
+          <span>Applications sur mesure</span><i></i>
+          <span>SaaS B2B</span><i></i>
+          <span>Automatisation de documents</span><i></i>
+          <span>Plannings intelligents</span><i></i>
+          <span>Assistants métier</span><i></i>
+          <span>Analyse de données</span><i></i>
+          <span>Suisse romande</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Chiffres ===== -->
+    <section class="stats section" id="impact">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-label"><span class="dot"></span>L'impact, mesuré</span>
+          <h2>L'IA fait gagner du temps.<br><em>Beaucoup</em> de temps.</h2>
+          <p class="sec-intro">
+            Ce ne sont pas nos chiffres, ce sont ceux des études les plus sérieuses
+            menées sur l'IA en entreprise.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card reveal" style="--d:.05s">
+            <p class="stat-num"><span class="num" data-count="80" data-prefix="jusqu’à " data-suffix=" min">jusqu’à 80 min</span></p>
+            <p class="stat-desc">gagnées chaque jour et par collaborateur avec l'IA générative</p>
+          </article>
+          <article class="stat-card reveal" style="--d:.15s">
+            <p class="stat-num"><span class="num" data-count="33" data-prefix="+" data-suffix=" %">+33 %</span></p>
+            <p class="stat-desc">de productivité pour chaque heure travaillée avec un outil d'IA</p>
+          </article>
+          <article class="stat-card reveal" style="--d:.25s">
+            <p class="stat-num"><span class="num" data-count="40" data-prefix="−" data-suffix=" %">−40 %</span></p>
+            <p class="stat-desc">de temps passé sur les tâches de rédaction</p>
+          </article>
+          <article class="stat-card reveal" style="--d:.35s">
+            <p class="stat-num"><span class="num" data-count="55" data-prefix="+" data-suffix=" %">+55 %</span></p>
+            <p class="stat-desc">de rapidité sur les tâches de développement logiciel</p>
+          </article>
+        </div>
+
+        <p class="stats-sources reveal">
+          Sources : OpenAI, <i>State of Enterprise AI</i> (2025) · Federal Reserve Bank of St.&nbsp;Louis (2025) ·
+          Noy &amp; Zhang, MIT, <i>Science</i> (2023) · Peng et al., GitHub (2023).
+          Les gains varient selon les métiers — on vous aide à mesurer les vôtres.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-label"><span class="dot"></span>Services</span>
+          <h2>Deux façons de vous<br>faire gagner du temps</h2>
+          <p class="sec-intro">
+            Former vos équipes pour qu'elles maîtrisent l'IA au quotidien, ou
+            construire l'outil qui n'existe pas encore. Souvent les deux.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card tilt reveal" style="--d:.1s">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V15h2V8L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            </div>
+            <p class="service-kicker">Pour vos équipes</p>
+            <h3>Formations IA en entreprise</h3>
+            <p class="service-desc">
+              Vos collaborateurs apprennent l'IA sur leurs vraies tâches, pas sur des
+              exemples théoriques. Dès la première demi-journée, ils repartent avec
+              des réflexes applicables le lendemain matin.
+            </p>
+            <ul class="service-list">
+              <li>Ateliers pratiques construits sur vos cas concrets</li>
+              <li>Maîtrise des outils du quotidien : ChatGPT, Claude, Copilot…</li>
+              <li>Adapté à chaque métier : administration, vente, technique, direction</li>
+              <li>Bonnes pratiques de confidentialité incluses (nLPD)</li>
+            </ul>
+            <p class="service-meta">Dès une demi-journée · Dans vos locaux ou à distance</p>
+            <a class="service-cta" href="mailto:contact@digitran.ch?subject=Formation%20IA%20pour%20mon%20%C3%A9quipe">
+              Organiser une formation
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card tilt reveal" style="--d:.25s">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="m8 17.6-5.6-5.6L8 6.4 9.4 7.8 5.2 12l4.2 4.2L8 17.6zm8 0-1.4-1.4 4.2-4.2-4.2-4.2L16 6.4l5.6 5.6L16 17.6zM10.4 20l1.8-16h2l-1.8 16h-2z"/></svg>
+            </div>
+            <p class="service-kicker">Pour votre métier</p>
+            <h3>Applications &amp; SaaS sur mesure</h3>
+            <p class="service-desc">
+              Quand l'outil n'existe pas, on le construit. Des applications qui
+              parlent votre langage métier et automatisent ce qui vous ralentit,
+              connectées à ce que vous utilisez déjà.
+            </p>
+            <ul class="service-list">
+              <li>Automatisation de documents : rapports, devis, justificatifs</li>
+              <li>Assistants IA nourris de votre savoir-faire</li>
+              <li>Intégration à l'existant : Excel, e-mails, ERP, logiciels métier</li>
+              <li>Hébergement en Suisse possible — le code vous appartient</li>
+            </ul>
+            <p class="service-meta">Prototype en quelques semaines · Devis fixe</p>
+            <a class="service-cta" href="mailto:contact@digitran.ch?subject=Une%20application%20sur%20mesure">
+              Discuter de votre idée
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Réalisations ===== -->
+    <section class="works section" id="realisations">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-label"><span class="dot"></span>Réalisations</span>
+          <h2>Des outils concrets,<br>déjà sur le terrain</h2>
+          <p class="sec-intro">
+            De l'ingénierie au sport : si une tâche est répétitive,
+            elle peut probablement être automatisée.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card tilt reveal" style="--d:.05s">
+            <div class="work-visual work-visual-leso" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-bar"><i></i><i></i><i></i></div>
+                <p class="mock-title">LESO — Étude de faisabilité biomasse</p>
+                <div class="mock-line w80"></div>
+                <div class="mock-line w60"></div>
+                <ul class="mock-checks">
+                  <li>Géométrie extraite des plans DWG</li>
+                  <li>Grandeurs thermiques calculées</li>
+                  <li>Rapport prêt à viser</li>
+                </ul>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tags"><span>SaaS</span><span>IA</span><span>Ingénierie</span></div>
+              <h3>LESO</h3>
+              <p>
+                L'assistant IA des bureaux d'études techniques : justificatifs thermiques,
+                études de faisabilité biomasse, documents normés. Ce qui prenait des jours
+                est prêt en quelques minutes — l'ingénieur vérifie, complète et signe.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card tilt reveal" style="--d:.2s">
+            <div class="work-visual work-visual-foot" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-bar"><i></i><i></i><i></i></div>
+                <p class="mock-title">Tournoi — samedi, 24 équipes, 3 terrains</p>
+                <ul class="mock-matches">
+                  <li><b>09:00</b><span>Terrain A</span>Aigle – Vevey</li>
+                  <li><b>09:25</b><span>Terrain B</span>Sion – Bulle</li>
+                  <li><b>09:50</b><span>Terrain C</span>Nyon – Morges</li>
+                </ul>
+                <p class="mock-badge">0 conflit · temps de repos équitables</p>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tags"><span>Application</span><span>Sport</span><span>Optimisation</span></div>
+              <h3>Plannings de tournois</h3>
+              <p>
+                Une application qui génère automatiquement les calendriers de tournois de
+                football : terrains, horaires, arbitres, temps de repos équilibrés.
+                Les organisateurs cliquent, le planning se construit.
+              </p>
+            </div>
+          </article>
+
+          <a class="work-card work-card-cta reveal" style="--d:.35s" href="#contact">
+            <div class="work-cta-inner">
+              <span class="work-plus" aria-hidden="true">+</span>
+              <h3>Votre métier ici</h3>
+              <p>
+                Une tâche répétitive ? Un processus qui rame ? Une idée en tête ?
+                C'est exactement le genre de problème qu'on aime résoudre.
+              </p>
+              <span class="service-cta">Parlons-en
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Méthode ===== -->
+    <section class="method section" id="methode">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-label"><span class="dot"></span>Méthode</span>
+          <h2>Simple, du premier café<br>au déploiement</h2>
+          <p class="sec-intro">
+            Pas de cahier des charges de quarante pages, pas de tunnel de six mois.
+            Une méthode directe, pensée pour les PME.
+          </p>
+        </div>
+
+        <div class="method-track">
+          <div class="method-line" aria-hidden="true"><span id="method-progress"></span></div>
+          <ol class="method-steps">
+            <li class="method-step reveal" style="--d:.05s">
+              <span class="step-num">01</span>
+              <h3>On échange</h3>
+              <p>Trente minutes, offertes. Vous parlez de votre métier et de ce qui vous prend du temps — pas de technique.</p>
+            </li>
+            <li class="method-step reveal" style="--d:.15s">
+              <span class="step-num">02</span>
+              <h3>On analyse</h3>
+              <p>On identifie les tâches où l'IA fera la plus grande différence, et on chiffre le temps que vous pourriez récupérer.</p>
+            </li>
+            <li class="method-step reveal" style="--d:.25s">
+              <span class="step-num">03</span>
+              <h3>On construit</h3>
+              <p>Formation sur mesure ou prototype d'application : vous testez en conditions réelles, sur vos propres dossiers.</p>
+            </li>
+            <li class="method-step reveal" style="--d:.35s">
+              <span class="step-num">04</span>
+              <h3>On reste là</h3>
+              <p>Déploiement, formation des équipes, ajustements. Un interlocuteur local, joignable, en français.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Confiance ===== -->
+    <section class="trust section" id="confiance">
+      <div class="trust-bg" aria-hidden="true">
+        <svg class="trust-cross" viewBox="0 0 32 32"><path fill="currentColor" d="M13 4h6v9h9v6h-9v9h-6v-9H4v-6h9z"/></svg>
+        <div class="orb orb-red-soft"></div>
+      </div>
+      <div class="container">
+        <div class="sec-head sec-head-light reveal">
+          <span class="sec-label"><span class="dot"></span>Confiance</span>
+          <h2>Le sérieux suisse,<br>l'agilité en plus</h2>
+          <p class="sec-intro">
+            En un an, la part des PME suisses qui utilisent l'IA est passée de
+            <strong>22&nbsp;% à 34&nbsp;%</strong><sup>*</sup>. La question n'est plus
+            «&nbsp;si&nbsp;», mais «&nbsp;comment&nbsp;». Notre métier, c'est le «&nbsp;comment&nbsp;» —
+            proprement, prudemment, à la suisse.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card reveal" style="--d:.05s">
+            <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+            <h3>Swiss made, vraiment</h3>
+            <p>Conçu, développé et accompagné en Suisse romande. Hébergement de vos données en Suisse possible.</p>
+          </article>
+          <article class="trust-card reveal" style="--d:.1s">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <h3>Données protégées</h3>
+            <p>Conformité nLPD, NDA sur simple demande. Vos données ne servent jamais à entraîner des modèles publics.</p>
+          </article>
+          <article class="trust-card reveal" style="--d:.15s">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            <h3>L'humain garde la main</h3>
+            <p>L'IA prépare, vous validez. Nous concevons des garde-fous pour que rien d'important ne parte sans contrôle humain.</p>
+          </article>
+          <article class="trust-card reveal" style="--d:.2s">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <h3>Proximité réelle</h3>
+            <p>On se déplace chez vous, de Genève au Jura. Un interlocuteur unique, joignable, qui parle votre langue.</p>
+          </article>
+          <article class="trust-card reveal" style="--d:.25s">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <h3>Transparence totale</h3>
+            <p>Devis fixe validé avant de commencer. Pas de dépendance cachée : le code et les accès vous appartiennent.</p>
+          </article>
+          <article class="trust-card reveal" style="--d:.3s">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 17.08z"/></svg>
+            <h3>Résultats mesurables</h3>
+            <p>On chiffre le temps gagné, avant et après. Et si l'IA n'apporte rien sur votre cas, on vous le dit honnêtement.</p>
+          </article>
+        </div>
+
+        <p class="trust-note reveal"><sup>*</sup> Étude AXA / Sotomo auprès de 300 PME suisses, octobre 2025.</p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section" id="faq">
+      <div class="container container-narrow">
+        <div class="sec-head reveal">
+          <span class="sec-label"><span class="dot"></span>FAQ</span>
+          <h2>Vos questions, sans détour</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal" style="--d:.05s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Je n'y connais rien en IA. C'est un problème&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Au contraire, c'est notre spécialité. La plupart de nos clients partent de zéro.
+              On explique tout en français courant, sans jargon, et on avance à votre rythme.
+              Vous n'avez pas besoin de comprendre comment l'IA fonctionne — seulement ce qu'elle peut faire pour vous.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item reveal" style="--d:.1s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Mes données sont-elles en sécurité&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Oui, et c'est non négociable. Hébergement en Suisse possible, conformité nLPD,
+              accord de confidentialité (NDA) sur simple demande. Vos données ne sont jamais utilisées
+              pour entraîner des modèles publics, et vous gardez le contrôle des accès.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item reveal" style="--d:.15s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Combien ça coûte&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Le premier échange est offert, et chaque projet démarre par un devis fixe que vous validez
+              avant qu'on écrive la moindre ligne. Une formation commence à la demi-journée ; une application
+              sur mesure dépend du périmètre — on vous le chiffre précisément, sans surprise en cours de route.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item reveal" style="--d:.2s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Combien de temps pour développer une application&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Un premier prototype fonctionnel arrive en quelques semaines, pas en plusieurs mois.
+              Vous le testez sur vos vrais dossiers, on ajuste, puis on déploie. Vous voyez de la valeur
+              très tôt — et vous décidez de la suite en connaissance de cause.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item reveal" style="--d:.25s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Et si l'IA se trompe&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Elle se trompera, parfois — comme un stagiaire brillant mais pressé. C'est pour ça que
+              nos outils sont conçus selon un principe simple : <strong>l'IA prépare, l'humain valide</strong>.
+              Rien d'important ne part sans votre contrôle. L'IA fait le travail ingrat, vous gardez la décision.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item reveal" style="--d:.3s">
+            <button class="faq-q" aria-expanded="false">
+              <span>Vous intervenez où&nbsp;?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>Dans toute la Suisse romande : Genève, Vaud, Valais, Fribourg, Neuchâtel, Jura et Berne
+              francophone. Sur site pour les formations et les ateliers, à distance quand c'est plus pratique
+              pour vous.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact section" id="contact">
+      <div class="contact-bg" aria-hidden="true">
+        <div class="orb orb-red-soft"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container">
+        <div class="contact-inner reveal">
+          <p class="sec-label sec-label-light"><span class="dot"></span>Contact</p>
+          <h2>Une tâche vous prend<br>des heures, chaque semaine&nbsp;?</h2>
+          <p class="contact-sub">
+            Décrivez-la-nous en deux phrases. On vous répond sous 24&nbsp;h avec un avis honnête :
+            automatisable ou pas, et combien de temps vous pourriez récupérer.
+            Premier échange offert, sans engagement.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-light btn-lg magnetic" href="mailto:contact@digitran.ch?subject=Une%20t%C3%A2che%20%C3%A0%20automatiser&body=Bonjour%20Digi'Tran%2C%0D%0A%0D%0AVoici%20ce%20qui%20me%20prend%20du%20temps%20%3A%20%0D%0A%0D%0AMon%20entreprise%20%2F%20secteur%20%3A%20">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              contact@digitran.ch
+            </a>
+            <button class="btn btn-outline-light btn-lg magnetic" id="copy-email" data-email="contact@digitran.ch">
+              Copier l'adresse
+            </button>
+          </div>
+          <ul class="hero-trust hero-trust-light">
+            <li>Réponse sous 24 h</li>
+            <li>Premier échange offert</li>
+            <li>Suisse romande &amp; à distance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="#accueil" aria-label="Digi'Tran — retour en haut">
+            <svg class="logo-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <defs>
+                <mask id="cut-foot">
+                  <rect width="512" height="512" fill="#fff"/>
+                  <line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/>
+                </mask>
+              </defs>
+              <path fill="currentColor" fill-rule="evenodd" mask="url(#cut-foot)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+              <line x1="100" y1="438" x2="269" y2="269" stroke="currentColor" stroke-width="27"/>
+              <path fill="currentColor" d="M314 224 243 244l51 51z"/>
+              <circle class="logo-dot" cx="448" cy="96" r="40" fill="#E03A2B"/>
+            </svg>
+            <span class="brand-name">Digi'Tran</span>
+          </a>
+          <p>L'IA au service des entreprises de Suisse romande : formations pratiques et applications sur mesure.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation pied de page">
+          <p class="footer-title">Navigation</p>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#methode">Méthode</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <p class="footer-title">Contact</p>
+          <ul>
+            <li><a href="mailto:contact@digitran.ch">contact@digitran.ch</a></li>
+            <li>Suisse romande<br>GE · VD · VS · FR · NE · JU</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Digi'Tran. Tous droits réservés. · <a href="mentions-legales.html">Mentions légales</a></p>
+        <p class="footer-swiss">
+          Conçu et développé en Suisse
+          <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
