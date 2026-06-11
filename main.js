@@ -99,7 +99,7 @@
   var swapWords = [
     'vos copier-coller',
     'vos doubles saisies',
-    'vos comptes-rendus',
+    'vos comptes rendus',
     'vos plannings Excel',
     'vos e-mails',
     'vos mises en page'
