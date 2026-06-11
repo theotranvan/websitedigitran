@@ -440,7 +440,7 @@
       return data;
     }
 
-    var FORMSPREE_ID = 'YOUR_FORMSPREE_ID'; // ← remplacer par votre ID Formspree
+    var FORMSPREE_ID = 'xaqzpezr';
 
     function sendRequest(flow) {
       var data = collect(flow);
