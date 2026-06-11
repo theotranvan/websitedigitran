@@ -946,7 +946,7 @@ html.wiz-open { overflow: hidden; }
 }
 
 /* --- Colonne principale --- */
-.wiz-main { display: flex; flex-direction: column; min-height: 0; }
+.wiz-main { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
 
 .wiz-progress { height: 4px; background: var(--line); flex: none; }
 .wiz-progress span {
@@ -956,7 +956,7 @@ html.wiz-open { overflow: hidden; }
   transition: width 0.5s var(--ease-out);
 }
 
-.wiz-form { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+.wiz-form { display: flex; flex-direction: column; min-height: 0; flex: 1; overflow: hidden; }
 
 .wiz-step {
   flex: 1; overflow-y: auto;

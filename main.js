@@ -440,25 +440,48 @@
       return data;
     }
 
+    var FORMSPREE_ID = 'YOUR_FORMSPREE_ID'; // ← remplacer par votre ID Formspree
+
     function sendRequest(flow) {
       var data = collect(flow);
       var lead = '';
       data.forEach(function (d) {
         if (!lead && (d.label === 'Format' || d.label === 'Secteur')) lead = d.value;
       });
-      var intro = flow === 'formation'
-        ? "J'aimerais organiser une formation IA pour mon équipe."
-        : "J'aimerais discuter d'un outil sur mesure pour mon entreprise.";
       var subject = flow === 'formation'
         ? 'Formation IA' + (lead ? ' — ' + lead : '')
         : 'Projet sur mesure' + (lead ? ' — ' + lead : '');
-      var lines = data.map(function (d) { return d.label + ' : ' + d.value; });
-      var body = "Bonjour Digi'Tran,\n\n" + intro + "\n\n" + lines.join('\n') +
-        "\n\n— Envoyé depuis digitran.ch";
-      var mailto = 'mailto:contact@digitran.ch?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
-      try { window.location.href = mailto; } catch (e) { /* ignore */ }
-      goTo(stepEl('success', 99), 'fwd');
+
+      var payload = { _subject: subject, Parcours: flow === 'formation' ? 'Formation IA' : 'Application sur mesure' };
+      data.forEach(function (d) { payload[d.label] = d.value; });
+
+      wizSubmit.disabled = true;
+      wizSubmit.textContent = 'Envoi…';
+
+      if (FORMSPREE_ID === 'YOUR_FORMSPREE_ID') {
+        goTo(stepEl('success', 99), 'fwd');
+        wizSubmit.disabled = false;
+        return;
+      }
+
+      fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (json) {
+        wizSubmit.disabled = false;
+        if (json.ok || json.next) {
+          goTo(stepEl('success', 99), 'fwd');
+        } else {
+          alert('Erreur lors de l\'envoi. Veuillez nous écrire à contact@digitran.ch');
+        }
+      })
+      .catch(function () {
+        wizSubmit.disabled = false;
+        alert('Problème réseau. Veuillez nous écrire à contact@digitran.ch');
+      });
     }
 
     function resetWiz() {
