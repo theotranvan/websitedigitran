@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Digi'Tran">
+  <defs>
+    <mask id="cut">
+      <rect width="512" height="512" fill="#fff"/>
+      <line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/>
+    </mask>
+  </defs>
+  <path fill="#1F2A52" fill-rule="evenodd" mask="url(#cut)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+  <line x1="100" y1="438" x2="269" y2="269" stroke="#1F2A52" stroke-width="27"/>
+  <path fill="#1F2A52" d="M314 224 243 244l51 51z"/>
+  <circle cx="448" cy="96" r="40" fill="#E03A2B"/>
+</svg>

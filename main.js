@@ -98,10 +98,10 @@
   /* ---------- Mot rotatif du hero ---------- */
   var swapWords = [
     'vos copier-coller',
-    'vos saisies manuelles',
-    'vos rapports du vendredi',
+    'vos doubles saisies',
+    'vos comptes-rendus',
     'vos plannings Excel',
-    "vos relances d'e-mails",
+    'vos e-mails',
     'vos mises en page'
   ];
 
