@@ -1108,6 +1108,79 @@ html.wiz-open { overflow: hidden; }
 @keyframes wizCheckM { to { stroke-dashoffset: 0; } }
 
 /* ============================================================
+   Pages SEO (landing)
+   ============================================================ */
+.lp-hero {
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; min-height: 62vh;
+  padding: calc(var(--header-h) + 70px) 0 70px;
+}
+.lp-hero-inner { position: relative; max-width: 860px; }
+.lp-title {
+  font-family: var(--font-head); font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.06; font-size: clamp(2.2rem, 5.2vw, 3.6rem);
+  color: var(--navy); margin: 6px 0 22px;
+}
+.lp-title em { font-style: normal; color: var(--red); }
+.lp-lead { color: var(--muted); font-size: 1.18rem; max-width: 680px; margin-bottom: 32px; }
+
+.lp-section { padding: 92px 0; }
+.lp-section-alt { background: var(--surface); }
+.lp-head { max-width: 680px; margin-bottom: 48px; }
+.lp-head h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin-bottom: 14px; }
+.lp-head p { color: var(--muted); font-size: 1.08rem; }
+
+.lp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.lp-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.lp-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 30px 28px;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, translate 0.35s var(--ease-out);
+}
+.lp-section-alt .lp-card { background: var(--bg); }
+.lp-card:hover { translate: 0 -6px; box-shadow: var(--shadow-md); border-color: transparent; }
+.lp-ico {
+  width: 52px; height: 52px; border-radius: 14px; margin-bottom: 18px;
+  background: var(--navy); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background-color 0.35s ease, transform 0.35s var(--ease-out);
+}
+.lp-ico svg { width: 26px; height: 26px; }
+.lp-card:hover .lp-ico { background: var(--red); transform: rotate(-6deg) scale(1.06); }
+.lp-card h3 { font-size: 1.22rem; margin-bottom: 10px; }
+.lp-card p { color: var(--muted); font-size: 0.98rem; }
+.lp-card-list { display: grid; gap: 9px; margin-top: 6px; }
+.lp-card-list li { display: flex; gap: 10px; align-items: flex-start; color: var(--muted); font-size: 0.97rem; }
+.lp-card-list li::before { content: ""; flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+
+.lp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: lp; }
+.lp-step {
+  position: relative; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); padding: 30px 26px;
+}
+.lp-section-alt .lp-step { background: var(--bg); }
+.lp-step .n {
+  font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
+  color: var(--red); display: block; margin-bottom: 8px; letter-spacing: 0.06em;
+}
+.lp-step h3 { font-size: 1.18rem; margin-bottom: 8px; }
+.lp-step p { color: var(--muted); font-size: 0.97rem; }
+
+.lp-cta {
+  position: relative; overflow: hidden; text-align: center; color: #fff;
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-darker) 100%);
+  border-radius: var(--radius-lg); padding: 64px 32px;
+}
+.lp-cta::after {
+  content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+  right: -150px; top: -180px;
+  background: radial-gradient(circle, rgba(224, 58, 43, 0.3), transparent 65%); filter: blur(60px);
+}
+.lp-cta-inner { position: relative; max-width: 640px; margin: 0 auto; }
+.lp-cta h2 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 16px; }
+.lp-cta p { color: var(--muted-light); font-size: 1.1rem; margin-bottom: 30px; }
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 1080px) {
@@ -1132,6 +1205,8 @@ html.wiz-open { overflow: hidden; }
   .works-grid { grid-template-columns: 1fr; }
   .work-card-cta { grid-column: auto; }
   .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .lp-grid, .lp-grid-3, .lp-steps { grid-template-columns: 1fr; }
+  .lp-section { padding: 64px 0; }
 }
 
 @media (max-width: 620px) {
