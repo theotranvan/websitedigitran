@@ -70,79 +70,188 @@
       </a>
       <ul class="nav-links">
         <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#realisations">Réalisations</a></li>
+        <li><a href="developpement-saas-sur-mesure.html">Sur mesure</a></li>
         <li><a href="index.html#methode">Méthode</a></li>
         <li><a href="index.html#faq">FAQ</a></li>
       </ul>
       <div class="nav-actions">
         <a class="btn btn-primary btn-nav magnetic" href="index.html#contact">Parlons-en</a>
+        <button class="nav-burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
       </div>
     </nav>
   </header>
 
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Menu mobile">
+      <ul>
+        <li style="--i:0"><a href="index.html#services">Services</a></li>
+        <li style="--i:1"><a href="developpement-saas-sur-mesure.html">Sur mesure</a></li>
+        <li style="--i:2"><a href="index.html#methode">Méthode</a></li>
+        <li style="--i:3"><a href="index.html#faq">FAQ</a></li>
+        <li style="--i:4"><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <p class="mobile-menu-foot">contact@digitran.ch · Suisse romande</p>
+    </nav>
+  </div>
+
   <main id="contenu">
-    <section class="section" style="padding-top: calc(var(--header-h) + 70px);">
-      <div class="container container-narrow">
-        <p class="sec-label"><span class="dot"></span>Formation IA</p>
-        <h1 style="font-size: clamp(2.1rem, 5vw, 3.2rem); margin-bottom: 22px;">Formation IA en entreprise,<br>partout en Suisse romande</h1>
-        <p class="sec-intro" style="font-size: 1.2rem; max-width: 720px;">
-          Digi'Tran forme vos équipes à l'intelligence artificielle sur leurs <strong>vraies tâches</strong>,
-          pas sur des exemples théoriques. Des ateliers pratiques, en français, sans jargon — pour que vos
-          collaborateurs repartent avec des réflexes applicables dès le lendemain matin.
+
+    <!-- Hero -->
+    <section class="lp-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-navy"></div>
+        <div class="orb orb-red"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container lp-hero-inner">
+        <p class="hero-badge reveal" style="--d:.05s">
+          <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+          Formation IA · Suisse romande
         </p>
-        <div class="hero-ctas" style="margin: 32px 0 0;">
+        <h1 class="lp-title reveal" style="--d:.12s">Formation IA en entreprise,<br>sur vos <em>vraies tâches</em></h1>
+        <p class="lp-lead reveal" style="--d:.2s">
+          Digi'Tran forme vos équipes à l'intelligence artificielle sur leurs cas concrets, pas sur des
+          exemples théoriques. Des ateliers pratiques, en français, sans jargon — pour repartir avec des
+          réflexes applicables dès le lendemain matin.
+        </p>
+        <div class="hero-ctas reveal" style="--d:.28s">
           <a class="btn btn-primary btn-lg magnetic" href="index.html#contact">
             Organiser une formation
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
           </a>
+          <a class="btn btn-ghost btn-lg magnetic" href="#programme">Voir le programme</a>
+        </div>
+        <ul class="hero-trust reveal" style="--d:.36s">
+          <li>Dès une demi-journée</li>
+          <li>Dans vos locaux ou à distance</li>
+          <li>Premier échange offert</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ce que vos équipes apprennent -->
+    <section class="lp-section lp-section-alt" id="programme">
+      <div class="container">
+        <div class="lp-head reveal">
+          <span class="sec-label"><span class="dot"></span>Programme</span>
+          <h2>Ce que vos équipes apprennent</h2>
+          <p>Chaque formation est construite sur vos métiers et vos outils, pour gagner du temps immédiatement et travailler en confiance.</p>
+        </div>
+        <div class="lp-grid">
+          <article class="lp-card reveal" style="--d:.05s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-2 9H6V9h12v2zm-4 4H6v-2h8v2zm4-8H6V5h12v2z"/></svg></div>
+            <h3>Les outils du quotidien</h3>
+            <p>Maîtriser ChatGPT, Claude, Microsoft Copilot et Gemini — et savoir lequel utiliser, quand.</p>
+          </article>
+          <article class="lp-card reveal" style="--d:.1s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div>
+            <h3>Rédiger &amp; synthétiser</h3>
+            <p>Rédiger, résumer, traduire et analyser vos documents en une fraction du temps habituel.</p>
+          </article>
+          <article class="lp-card reveal" style="--d:.05s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></div>
+            <h3>Automatiser les tâches répétitives</h3>
+            <p>E-mails, comptes rendus, rapports, tableaux : déléguer le travail ingrat à l'IA.</p>
+          </article>
+          <article class="lp-card reveal" style="--d:.1s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4zm0 5h16v2H4zm0 5h10v2H4z"/></svg></div>
+            <h3>Écrire de bons prompts</h3>
+            <p>Donner les bonnes instructions, adaptées à chaque métier, pour des résultats fiables.</p>
+          </article>
+          <article class="lp-card reveal" style="--d:.05s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+            <h3>Garder le contrôle</h3>
+            <p>Comprendre les limites de l'IA, vérifier, détecter les erreurs : l'humain valide toujours.</p>
+          </article>
+          <article class="lp-card reveal" style="--d:.1s">
+            <div class="lp-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9zm3 11a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/></svg></div>
+            <h3>Protéger vos données</h3>
+            <p>Confidentialité, conformité nLPD et bons réflexes pour ne rien exposer par erreur.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" style="background: var(--surface); padding-top: 40px;">
-      <div class="container container-narrow">
-        <h2 style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 18px;">Ce que vos équipes apprennent</h2>
-        <p class="sec-intro" style="margin-bottom: 26px;">
-          Chaque formation IA est construite sur vos métiers et vos outils. Nous couvrons l'essentiel pour
-          gagner du temps immédiatement et travailler en confiance.
-        </p>
-        <ul class="service-list" style="font-size: 1.05rem;">
-          <li>Maîtriser les outils du quotidien : <strong>ChatGPT, Claude, Microsoft Copilot</strong> et Gemini.</li>
-          <li>Rédiger, résumer, traduire et analyser des documents en une fraction du temps.</li>
-          <li>Automatiser les tâches répétitives : e-mails, comptes rendus, rapports, tableaux.</li>
-          <li>Écrire de bonnes instructions (prompts) adaptées à chaque métier.</li>
-          <li>Garder le contrôle : vérification humaine, limites de l'IA, détection des erreurs.</li>
-          <li>Protéger vos données : confidentialité, conformité <strong>nLPD</strong>, bons réflexes.</li>
-        </ul>
+    <!-- Formats -->
+    <section class="lp-section">
+      <div class="container">
+        <div class="lp-head reveal">
+          <span class="sec-label"><span class="dot"></span>Formats</span>
+          <h2>Trois formats, un seul objectif</h2>
+          <p>On choisit ensemble le bon point de départ, puis on ajuste selon vos résultats.</p>
+        </div>
+        <div class="lp-steps">
+          <div class="lp-step reveal" style="--d:.05s">
+            <span class="n">Demi-journée</span>
+            <h3>Découverte</h3>
+            <p>3 à 4 h pour prendre en main les outils essentiels et repartir avec des réflexes concrets.</p>
+          </div>
+          <div class="lp-step reveal" style="--d:.15s">
+            <span class="n">Journée complète</span>
+            <h3>Immersion</h3>
+            <p>Une journée pour transformer en profondeur les habitudes de travail de l'équipe.</p>
+          </div>
+          <div class="lp-step reveal" style="--d:.25s">
+            <span class="n">Programme</span>
+            <h3>Sur mesure</h3>
+            <p>Plusieurs sessions, suivi dans le temps et accompagnement jusqu'au déploiement.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top: 50px;">
-      <div class="container container-narrow">
-        <h2 style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 18px;">Pour qui&nbsp;?</h2>
-        <p class="sec-intro">
-          Nos formations à l'intelligence artificielle s'adressent à <strong>toutes les fonctions</strong> :
-          administration et secrétariat, vente et marketing, technique et ingénierie, RH, finance et direction.
-          Que votre équipe débute totalement ou ait déjà testé l'IA, nous adaptons le niveau et le rythme.
-        </p>
+    <!-- Pour qui -->
+    <section class="lp-section lp-section-alt">
+      <div class="container">
+        <div class="lp-head reveal">
+          <span class="sec-label"><span class="dot"></span>Pour qui</span>
+          <h2>Adapté à votre équipe</h2>
+          <p>Que vos collaborateurs débutent totalement ou aient déjà testé l'IA, on adapte le niveau et le rythme.</p>
+        </div>
+        <div class="lp-grid lp-grid-3">
+          <article class="lp-card reveal" style="--d:.05s">
+            <h3>Toutes les fonctions</h3>
+            <ul class="lp-card-list">
+              <li>Administration &amp; secrétariat</li>
+              <li>Vente &amp; marketing</li>
+              <li>Technique &amp; ingénierie</li>
+              <li>RH, finance &amp; direction</li>
+            </ul>
+          </article>
+          <article class="lp-card reveal" style="--d:.12s">
+            <h3>Tous les niveaux</h3>
+            <ul class="lp-card-list">
+              <li>Débutants, sans aucune base</li>
+              <li>Utilisateurs occasionnels</li>
+              <li>Équipes mixtes</li>
+              <li>Rythme adapté à chacun</li>
+            </ul>
+          </article>
+          <article class="lp-card reveal" style="--d:.19s">
+            <h3>Partout en Suisse romande</h3>
+            <ul class="lp-card-list">
+              <li>Genève, Vaud, Valais</li>
+              <li>Fribourg, Neuchâtel, Jura</li>
+              <li>Berne francophone</li>
+              <li>Sur site ou à distance</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" style="background: var(--surface); padding-top: 50px;">
-      <div class="container container-narrow">
-        <h2 style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 18px;">Comment ça se passe</h2>
-        <ul class="service-list" style="font-size: 1.05rem;">
-          <li><strong>Demi-journée découverte</strong> — 3 à 4 h pour prendre en main les outils essentiels.</li>
-          <li><strong>Journée complète immersion</strong> — transformer en profondeur les réflexes de l'équipe.</li>
-          <li><strong>Programme sur mesure</strong> — plusieurs sessions et suivi dans le temps.</li>
-        </ul>
-        <p class="sec-intro" style="margin-top: 22px;">
-          Dans vos locaux ou à distance, à Genève, dans le canton de Vaud, en Valais, à Fribourg, à Neuchâtel,
-          dans le Jura et en Suisse romande. Premier échange offert, devis fixe avant de commencer.
-        </p>
-        <div class="hero-ctas" style="margin-top: 30px;">
-          <a class="btn btn-primary btn-lg magnetic" href="index.html#contact">Demander un programme</a>
-          <a class="btn btn-ghost btn-lg magnetic" href="developpement-saas-sur-mesure.html">Voir aussi : applications sur mesure</a>
+    <!-- CTA -->
+    <section class="lp-section">
+      <div class="container">
+        <div class="lp-cta reveal">
+          <div class="lp-cta-inner">
+            <h2>Prêt à former votre équipe&nbsp;?</h2>
+            <p>Décrivez-nous votre contexte en deux phrases. On vous répond sous 24&nbsp;h avec une proposition concrète. Premier échange offert.</p>
+            <div class="hero-ctas" style="justify-content:center;">
+              <a class="btn btn-light btn-lg magnetic" href="index.html#contact">Organiser une formation</a>
+              <a class="btn btn-outline-light btn-lg magnetic" href="developpement-saas-sur-mesure.html">Applications sur mesure</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -150,7 +259,38 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom" style="border:0; padding-top: 0;">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="index.html" aria-label="Digi'Tran — accueil">
+            <svg class="logo-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <defs><mask id="cut-foot"><rect width="512" height="512" fill="#fff"/><line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/></mask></defs>
+              <path fill="currentColor" fill-rule="evenodd" mask="url(#cut-foot)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+              <line x1="100" y1="438" x2="269" y2="269" stroke="currentColor" stroke-width="27"/>
+              <path fill="currentColor" d="M314 224 243 244l51 51z"/>
+              <circle class="logo-dot" cx="448" cy="96" r="40" fill="#E03A2B"/>
+            </svg>
+            <span class="brand-name">Digi'Tran</span>
+          </a>
+          <p>L'IA au service des entreprises de Suisse romande : formations pratiques et applications sur mesure.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation pied de page">
+          <p class="footer-title">Navigation</p>
+          <ul>
+            <li><a href="formation-ia-entreprise.html">Formation IA en entreprise</a></li>
+            <li><a href="developpement-saas-sur-mesure.html">Développement SaaS sur mesure</a></li>
+            <li><a href="index.html#realisations">Réalisations</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <p class="footer-title">Contact</p>
+          <ul>
+            <li><a href="mailto:contact@digitran.ch">contact@digitran.ch</a></li>
+            <li>Suisse romande<br>GE · VD · VS · FR · NE · JU</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>© 2026 Digi'Tran. Tous droits réservés. · <a href="index.html">Accueil</a> · <a href="mentions-legales.html">Mentions légales</a></p>
         <p class="footer-swiss">Conçu et développé en Suisse
           <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
