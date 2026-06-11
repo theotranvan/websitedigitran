@@ -894,8 +894,8 @@ html.wiz-open { overflow: hidden; }
 
 .wiz-panel {
   position: relative; z-index: 1;
-  display: grid; grid-template-columns: 300px 1fr;
-  width: 100%; max-width: 920px; max-height: calc(100vh - 48px);
+  display: grid; grid-template-columns: 300px 1fr; grid-template-rows: minmax(0, 1fr);
+  width: 100%; max-width: 920px; height: min(660px, calc(100vh - 48px));
   background: var(--surface); border-radius: var(--radius-lg);
   box-shadow: 0 40px 120px rgba(9, 13, 33, 0.5);
   overflow: hidden;
@@ -1154,13 +1154,13 @@ html.wiz-open { overflow: hidden; }
 
 /* --- Wizard responsive --- */
 @media (max-width: 800px) {
-  .wiz-panel { grid-template-columns: 1fr; max-height: calc(100vh - 32px); }
+  .wiz-panel { grid-template-columns: 1fr; height: min(660px, calc(100vh - 32px)); }
   .wiz-aside { display: none; }
   .opt-grid-3 { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
   .wizard { padding: 0; align-items: flex-end; }
-  .wiz-panel { max-width: 100%; max-height: 94vh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .wiz-panel { max-width: 100%; height: 92dvh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
   .wiz-step { padding: 34px 22px 22px; }
   .wiz-actions { padding: 16px 22px; }
   .opt-grid-2, .opt-grid-3 { grid-template-columns: 1fr; }
