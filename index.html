@@ -97,7 +97,7 @@
       </ul>
 
       <div class="nav-actions">
-        <a class="btn btn-primary btn-nav magnetic" href="#contact">Parlons-en</a>
+        <button type="button" class="btn btn-primary btn-nav magnetic" data-wizard="choose">Parlons-en</button>
         <button class="nav-burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
           <span></span><span></span>
         </button>
@@ -140,7 +140,8 @@
 
           <h1 class="hero-title">
             <span class="line"><span>Votre temps vaut</span></span>
-            <span class="line"><span>mieux que <span class="swap-wrap"><span class="swap-word" id="swap-word">vos copier-coller</span></span></span></span>
+            <span class="line"><span>mieux que</span></span>
+            <span class="line"><span class="swap-wrap"><span class="swap-word" id="swap-word">vos copier-coller</span></span></span>
           </h1>
 
           <p class="hero-sub reveal" style="--d:.5s">
@@ -150,10 +151,10 @@
           </p>
 
           <div class="hero-ctas reveal" style="--d:.65s">
-            <a class="btn btn-primary btn-lg magnetic" href="#contact">
+            <button type="button" class="btn btn-primary btn-lg magnetic" data-wizard="choose">
               Parlons de votre projet
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
-            </a>
+            </button>
             <a class="btn btn-ghost btn-lg magnetic" href="#realisations">Voir nos réalisations</a>
           </div>
 
@@ -166,29 +167,29 @@
 
         <div class="hero-visual" aria-hidden="true">
           <div class="float-card card-doc" data-depth="14">
-            <div class="fc-head"><span class="fc-pill fc-pill-navy">LESO · Bureau d'études</span></div>
-            <p class="fc-title">Justificatif thermique SIA&nbsp;380/1</p>
+            <div class="fc-head"><span class="fc-pill fc-pill-navy">Juridique · Achats · Direction</span></div>
+            <p class="fc-title">Analyse de 38 contrats fournisseurs</p>
             <div class="fc-bar"><span></span></div>
             <ul class="fc-checks">
-              <li>Géométrie extraite des plans</li>
-              <li>Calculs préparés</li>
-              <li>Rapport PDF généré — 4 min</li>
+              <li>Clauses risquées identifiées</li>
+              <li>Synthèse par contrat générée</li>
+              <li>8 min — au lieu de 3 jours</li>
             </ul>
           </div>
 
           <div class="float-card card-chat" data-depth="26">
-            <p class="fc-q">« Résume ces 12 PV de chantier et liste les points bloquants. »</p>
-            <div class="fc-a"><span class="fc-spark"></span>12 documents analysés · 3 points bloquants identifiés</div>
+            <p class="fc-q">« Génère le rapport trimestriel depuis nos données Excel. »</p>
+            <div class="fc-a"><span class="fc-spark"></span>12 pages · graphiques inclus · PDF prêt en 4 min</div>
           </div>
 
           <div class="float-card card-plan" data-depth="20">
-            <div class="fc-head"><span class="fc-pill fc-pill-red">Tournoi U13 · 24 équipes</span></div>
+            <div class="fc-head"><span class="fc-pill fc-pill-red">Onboarding · Nouveau collaborateur</span></div>
             <ul class="fc-matches">
-              <li><b>09:00</b> Terrain A — Aigle · Vevey</li>
-              <li><b>09:25</b> Terrain B — Sion · Bulle</li>
-              <li><b>09:50</b> Terrain A — Nyon · Morges</li>
+              <li><b>✓</b> Contrat rédigé &amp; personnalisé</li>
+              <li><b>✓</b> Documents envoyés automatiquement</li>
+              <li><b>✓</b> Accès &amp; outils configurés</li>
             </ul>
-            <p class="fc-ok">Planning optimisé — 0 conflit</p>
+            <p class="fc-ok">Processus complet — 15 min</p>
           </div>
 
           <div class="float-chip chip-a" data-depth="34">− 40 % de rédaction</div>
@@ -245,7 +246,7 @@
 
         <div class="stats-grid">
           <article class="stat-card reveal" style="--d:.05s">
-            <p class="stat-num"><span class="num" data-count="80" data-prefix="jusqu’à " data-suffix=" min">jusqu’à 80 min</span></p>
+            <p class="stat-num"><span class="num" data-count="80" data-prefix="+ de " data-suffix=" min">+ de 80 min</span></p>
             <p class="stat-desc">gagnées chaque jour et par collaborateur avec l'IA générative</p>
           </article>
           <article class="stat-card reveal" style="--d:.15s">
@@ -301,10 +302,10 @@
               <li>Bonnes pratiques de confidentialité incluses (nLPD)</li>
             </ul>
             <p class="service-meta">Dès une demi-journée · Dans vos locaux ou à distance</p>
-            <a class="service-cta" href="mailto:contact@digitran.ch?subject=Formation%20IA%20pour%20mon%20%C3%A9quipe">
+            <button type="button" class="service-cta" data-wizard="formation">
               Organiser une formation
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
-            </a>
+            </button>
           </article>
 
           <article class="service-card tilt reveal" style="--d:.25s">
@@ -325,10 +326,10 @@
               <li>Hébergement en Suisse possible — le code vous appartient</li>
             </ul>
             <p class="service-meta">Prototype en quelques semaines · Devis fixe</p>
-            <a class="service-cta" href="mailto:contact@digitran.ch?subject=Une%20application%20sur%20mesure">
+            <button type="button" class="service-cta" data-wizard="saas">
               Discuter de votre idée
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
-            </a>
+            </button>
           </article>
         </div>
       </div>
@@ -396,7 +397,7 @@
             </div>
           </article>
 
-          <a class="work-card work-card-cta reveal" style="--d:.35s" href="#contact">
+          <a class="work-card work-card-cta reveal" style="--d:.35s" href="#contact" data-wizard="saas">
             <div class="work-cta-inner">
               <span class="work-plus" aria-hidden="true">+</span>
               <h3>Votre métier ici</h3>
@@ -474,7 +475,7 @@
         <div class="trust-grid">
           <article class="trust-card reveal" style="--d:.05s">
             <svg class="swiss-cross" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#E03A2B"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
-            <h3>Swiss made, vraiment</h3>
+            <h3>Swiss made</h3>
             <p>Conçu, développé et accompagné en Suisse romande. Hébergement de vos données en Suisse possible.</p>
           </article>
           <article class="trust-card reveal" style="--d:.1s">
@@ -608,10 +609,10 @@
             Premier échange offert, sans engagement.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-light btn-lg magnetic" href="mailto:contact@digitran.ch?subject=Une%20t%C3%A2che%20%C3%A0%20automatiser&body=Bonjour%20Digi'Tran%2C%0D%0A%0D%0AVoici%20ce%20qui%20me%20prend%20du%20temps%20%3A%20%0D%0A%0D%0AMon%20entreprise%20%2F%20secteur%20%3A%20">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              contact@digitran.ch
-            </a>
+            <button type="button" class="btn btn-light btn-lg magnetic" data-wizard="choose">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+              Démarrer ma demande
+            </button>
             <button class="btn btn-outline-light btn-lg magnetic" id="copy-email" data-email="contact@digitran.ch">
               Copier l'adresse
             </button>
@@ -625,6 +626,267 @@
       </div>
     </section>
   </main>
+
+  <!-- ===== Assistant de contact (wizard) ===== -->
+  <div class="wizard" id="wizard" aria-hidden="true">
+    <div class="wiz-overlay" data-wiz-close></div>
+
+    <div class="wiz-panel" role="dialog" aria-modal="true" aria-labelledby="wiz-heading">
+      <button type="button" class="wiz-close" data-wiz-close aria-label="Fermer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12.01l-6.3-6.3-1.41 1.41L10.59 13.4l-6.3 6.3 1.41 1.41 6.3-6.3 6.29 6.3 1.41-1.41-6.29-6.3 6.29-6.29z"/></svg>
+      </button>
+
+      <div class="wiz-aside" aria-hidden="true">
+        <div class="wiz-aside-glow"></div>
+        <svg class="wiz-aside-logo" viewBox="0 0 512 512" focusable="false">
+          <defs>
+            <mask id="cut-wiz">
+              <rect width="512" height="512" fill="#fff"/>
+              <line x1="70" y1="468" x2="252" y2="286" stroke="#000" stroke-width="58"/>
+            </mask>
+          </defs>
+          <path fill="currentColor" fill-rule="evenodd" mask="url(#cut-wiz)" d="M132 92h150c90.6 0 164 73.4 164 164s-73.4 164-164 164H132V92zm72 72v184h78c50.8 0 92-41.2 92-92s-41.2-92-92-92h-78z"/>
+          <line x1="100" y1="438" x2="269" y2="269" stroke="currentColor" stroke-width="27"/>
+          <path fill="currentColor" d="M314 224 243 244l51 51z"/>
+          <circle cx="448" cy="96" r="40" fill="#E03A2B"/>
+        </svg>
+        <p class="wiz-aside-kicker">Premier échange offert</p>
+        <h3 class="wiz-aside-title" id="wiz-aside-title">Parlons de votre temps gagné</h3>
+        <p class="wiz-aside-sub" id="wiz-aside-sub">Quelques questions rapides — on revient vers vous sous 24&nbsp;h avec un avis honnête et concret.</p>
+        <ul class="wiz-aside-list">
+          <li>Sans engagement</li>
+          <li>Réponse sous 24 h</li>
+          <li>Données traitées en Suisse</li>
+        </ul>
+      </div>
+
+      <div class="wiz-main">
+        <div class="wiz-progress" id="wiz-progress" aria-hidden="true"><span></span></div>
+
+        <form class="wiz-form" id="wiz-form" novalidate>
+
+          <!-- ===== Étape 0 : choix du parcours ===== -->
+          <fieldset class="wiz-step" data-flow="choose" data-step="0">
+            <p class="wiz-step-kicker">Pour commencer</p>
+            <h2 class="wiz-step-title" id="wiz-heading">Vous souhaitez avant tout…</h2>
+            <div class="opt-grid opt-grid-2">
+              <button type="button" class="opt-card opt-card-lg" data-goto="formation">
+                <span class="opt-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V15h2V8L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></span>
+                <span class="opt-h">Former mon équipe</span>
+                <span class="opt-p">Vos collaborateurs maîtrisent l'IA sur leurs vraies tâches.</span>
+                <span class="opt-go">Choisir<svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg></span>
+              </button>
+              <button type="button" class="opt-card opt-card-lg" data-goto="saas">
+                <span class="opt-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m8 17.6-5.6-5.6L8 6.4 9.4 7.8 5.2 12l4.2 4.2L8 17.6zm8 0-1.4-1.4 4.2-4.2-4.2-4.2L16 6.4l5.6 5.6L16 17.6zM10.4 20l1.8-16h2l-1.8 16h-2z"/></svg></span>
+                <span class="opt-h">Créer un outil sur mesure</span>
+                <span class="opt-p">Une application qui automatise ce qui vous ralentit.</span>
+                <span class="opt-go">Choisir<svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg></span>
+              </button>
+            </div>
+          </fieldset>
+
+          <!-- ============================================================
+               PARCOURS FORMATION
+               ============================================================ -->
+
+          <!-- Formation · étape 1 : format -->
+          <fieldset class="wiz-step" data-flow="formation" data-step="1">
+            <p class="wiz-step-kicker">Formation IA · 1 sur 3</p>
+            <h2 class="wiz-step-title">Quel format vous conviendrait&nbsp;?</h2>
+            <p class="wiz-step-hint">Un choix de départ — on ajustera ensemble selon vos objectifs.</p>
+            <div class="opt-grid opt-grid-3" data-field="Format" data-select="single" data-required="1">
+              <button type="button" class="opt-card" data-value="Demi-journée (découverte)">
+                <span class="opt-tag">Découverte</span>
+                <span class="opt-h">Demi-journée</span>
+                <span class="opt-p">3–4 h pour prendre en main les outils essentiels et repartir avec des réflexes.</span>
+              </button>
+              <button type="button" class="opt-card" data-value="Journée complète (immersion)">
+                <span class="opt-tag opt-tag-pop">Le plus choisi</span>
+                <span class="opt-h">Journée complète</span>
+                <span class="opt-p">Une journée pour transformer en profondeur les habitudes de l'équipe.</span>
+              </button>
+              <button type="button" class="opt-card" data-value="Programme sur mesure (plusieurs sessions)">
+                <span class="opt-tag">Le +</span>
+                <span class="opt-h">Programme sur mesure</span>
+                <span class="opt-p">Plusieurs sessions, suivi dans le temps et accompagnement au déploiement.</span>
+              </button>
+            </div>
+          </fieldset>
+
+          <!-- Formation · étape 2 : équipe -->
+          <fieldset class="wiz-step" data-flow="formation" data-step="2">
+            <p class="wiz-step-kicker">Formation IA · 2 sur 3</p>
+            <h2 class="wiz-step-title">Parlez-nous de votre équipe</h2>
+            <div class="wiz-field">
+              <label class="wiz-label">Combien de participants&nbsp;?</label>
+              <div class="chip-row" data-field="Participants" data-select="single" data-required="1">
+                <button type="button" class="chip-opt" data-value="1 à 5">1 à 5</button>
+                <button type="button" class="chip-opt" data-value="6 à 10">6 à 10</button>
+                <button type="button" class="chip-opt" data-value="11 à 20">11 à 20</button>
+                <button type="button" class="chip-opt" data-value="Plus de 20">20+</button>
+              </div>
+            </div>
+            <div class="wiz-field">
+              <label class="wiz-label">Niveau de l'équipe avec l'IA</label>
+              <div class="chip-row" data-field="Niveau" data-select="single">
+                <button type="button" class="chip-opt" data-value="Débutant">Débutant</button>
+                <button type="button" class="chip-opt" data-value="Intermédiaire">Intermédiaire</button>
+                <button type="button" class="chip-opt" data-value="Mixte">Mixte</button>
+              </div>
+            </div>
+            <div class="wiz-field">
+              <label class="wiz-label" for="f-secteur">Votre secteur d'activité</label>
+              <input class="wiz-input" type="text" id="f-secteur" data-field="Secteur" placeholder="Ex. fiduciaire, ingénierie, vente…">
+            </div>
+          </fieldset>
+
+          <!-- Formation · étape 3 : coordonnées -->
+          <fieldset class="wiz-step" data-flow="formation" data-step="3">
+            <p class="wiz-step-kicker">Formation IA · 3 sur 3</p>
+            <h2 class="wiz-step-title">Où vous recontacter&nbsp;?</h2>
+            <div class="wiz-grid-2">
+              <div class="wiz-field">
+                <label class="wiz-label" for="f-nom">Nom &amp; prénom</label>
+                <input class="wiz-input" type="text" id="f-nom" data-field="Nom" data-required="1" placeholder="Jean Dupont">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="f-entreprise">Entreprise</label>
+                <input class="wiz-input" type="text" id="f-entreprise" data-field="Entreprise" placeholder="Votre société">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="f-email">E-mail</label>
+                <input class="wiz-input" type="email" id="f-email" data-field="E-mail" data-required="1" placeholder="vous@entreprise.ch">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="f-tel">Téléphone <span class="wiz-opt">(facultatif)</span></label>
+                <input class="wiz-input" type="tel" id="f-tel" data-field="Téléphone" placeholder="+41 …">
+              </div>
+            </div>
+            <div class="wiz-field">
+              <label class="wiz-label" for="f-msg">Un objectif précis&nbsp;? <span class="wiz-opt">(facultatif)</span></label>
+              <textarea class="wiz-input wiz-textarea" id="f-msg" data-field="Message" rows="3" placeholder="Ce que vous aimeriez que votre équipe sache faire après la formation…"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- ============================================================
+               PARCOURS SAAS
+               ============================================================ -->
+
+          <!-- SaaS · étape 1 : secteur -->
+          <fieldset class="wiz-step" data-flow="saas" data-step="1">
+            <p class="wiz-step-kicker">Projet sur mesure · 1 sur 3</p>
+            <h2 class="wiz-step-title">Dans quel secteur évoluez-vous&nbsp;?</h2>
+            <p class="wiz-step-hint">Ça nous aide à parler tout de suite votre langage métier.</p>
+            <div class="chip-row chip-row-wrap" data-field="Secteur" data-select="single" data-required="1">
+              <button type="button" class="chip-opt" data-value="Construction &amp; Ingénierie">Construction &amp; Ingénierie</button>
+              <button type="button" class="chip-opt" data-value="Fiduciaire &amp; Finance">Fiduciaire &amp; Finance</button>
+              <button type="button" class="chip-opt" data-value="Santé &amp; Médical">Santé &amp; Médical</button>
+              <button type="button" class="chip-opt" data-value="Juridique">Juridique</button>
+              <button type="button" class="chip-opt" data-value="Industrie &amp; Production">Industrie &amp; Production</button>
+              <button type="button" class="chip-opt" data-value="Commerce &amp; Retail">Commerce &amp; Retail</button>
+              <button type="button" class="chip-opt" data-value="Immobilier">Immobilier</button>
+              <button type="button" class="chip-opt" data-value="Services &amp; Conseil">Services &amp; Conseil</button>
+              <button type="button" class="chip-opt" data-value="Autre">Autre</button>
+            </div>
+          </fieldset>
+
+          <!-- SaaS · étape 2 : besoins -->
+          <fieldset class="wiz-step" data-flow="saas" data-step="2">
+            <p class="wiz-step-kicker">Projet sur mesure · 2 sur 3</p>
+            <h2 class="wiz-step-title">De quoi avez-vous besoin&nbsp;?</h2>
+            <p class="wiz-step-hint">Plusieurs réponses possibles — même une intuition suffit.</p>
+            <div class="opt-grid opt-grid-3" data-field="Besoins" data-select="multi" data-required="1">
+              <button type="button" class="opt-card opt-card-sm" data-value="Automatiser des documents">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></span>
+                <span class="opt-h">Automatiser des documents</span>
+                <span class="opt-p">Rapports, devis, contrats, justificatifs.</span>
+              </button>
+              <button type="button" class="opt-card opt-card-sm" data-value="Un assistant IA métier">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 9V7a2 2 0 0 0-2-2h-3V3h-2v2H9V3H7v2H6a2 2 0 0 0-2 2v2H2v2h2v3H2v2h2v2a2 2 0 0 0 2 2h1v2h2v-2h6v2h2v-2h1a2 2 0 0 0 2-2v-2h2v-2h-2v-3h2V9h-2zM9 13a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg></span>
+                <span class="opt-h">Un assistant IA métier</span>
+                <span class="opt-p">Nourri de votre savoir-faire interne.</span>
+              </button>
+              <button type="button" class="opt-card opt-card-sm" data-value="Intégrer mes outils existants">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M17 7h-4v2h4a3 3 0 0 1 0 6h-4v2h4a5 5 0 0 0 0-10zm-6 8H7a3 3 0 0 1 0-6h4V7H7a5 5 0 0 0 0 10h4v-2zM7 11h10v2H7z"/></svg></span>
+                <span class="opt-h">Intégrer mes outils</span>
+                <span class="opt-p">Excel, e-mails, ERP, logiciels métier.</span>
+              </button>
+              <button type="button" class="opt-card opt-card-sm" data-value="Analyser mes données">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 9.2h3V19H5zM10.6 5h3v14h-3zm5.6 8H19v6h-2.8z"/></svg></span>
+                <span class="opt-h">Analyser mes données</span>
+                <span class="opt-p">Synthèses, tableaux de bord, tendances.</span>
+              </button>
+              <button type="button" class="opt-card opt-card-sm" data-value="Une application / SaaS complète">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8H4z"/></svg></span>
+                <span class="opt-h">Une app / SaaS complète</span>
+                <span class="opt-p">Un produit web pensé pour votre métier.</span>
+              </button>
+              <button type="button" class="opt-card opt-card-sm" data-value="Je ne sais pas encore">
+                <span class="opt-ico opt-ico-sm"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M11 18h2v-2h-2v2zm1-16A10 10 0 1 0 22 12 10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-14a4 4 0 0 0-4 4h2a2 2 0 1 1 4 0c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></svg></span>
+                <span class="opt-h">Je ne sais pas encore</span>
+                <span class="opt-p">On défriche ensemble, c'est notre métier.</span>
+              </button>
+            </div>
+          </fieldset>
+
+          <!-- SaaS · étape 3 : description + coordonnées -->
+          <fieldset class="wiz-step" data-flow="saas" data-step="3">
+            <p class="wiz-step-kicker">Projet sur mesure · 3 sur 3</p>
+            <h2 class="wiz-step-title">Votre projet en deux mots</h2>
+            <div class="wiz-field">
+              <label class="wiz-label" for="s-msg">Qu'est-ce qui vous prend du temps aujourd'hui&nbsp;?</label>
+              <textarea class="wiz-input wiz-textarea" id="s-msg" data-field="Description" rows="3" placeholder="Ex. on ressaisit chaque devis à la main dans deux logiciels différents…"></textarea>
+            </div>
+            <div class="wiz-grid-2">
+              <div class="wiz-field">
+                <label class="wiz-label" for="s-nom">Nom &amp; prénom</label>
+                <input class="wiz-input" type="text" id="s-nom" data-field="Nom" data-required="1" placeholder="Jean Dupont">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="s-entreprise">Entreprise</label>
+                <input class="wiz-input" type="text" id="s-entreprise" data-field="Entreprise" placeholder="Votre société">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="s-email">E-mail</label>
+                <input class="wiz-input" type="email" id="s-email" data-field="E-mail" data-required="1" placeholder="vous@entreprise.ch">
+              </div>
+              <div class="wiz-field">
+                <label class="wiz-label" for="s-tel">Téléphone <span class="wiz-opt">(facultatif)</span></label>
+                <input class="wiz-input" type="tel" id="s-tel" data-field="Téléphone" placeholder="+41 …">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- ===== Écran de confirmation ===== -->
+          <div class="wiz-step wiz-success" data-flow="success" data-step="99">
+            <div class="wiz-check" aria-hidden="true">
+              <svg viewBox="0 0 52 52"><circle class="wiz-check-c" cx="26" cy="26" r="24" fill="none"/><path class="wiz-check-m" fill="none" d="M14 27l8 8 16-16"/></svg>
+            </div>
+            <h2 class="wiz-step-title">C'est noté, merci&nbsp;!</h2>
+            <p class="wiz-step-hint wiz-success-text">Votre demande a bien été reçue. On revient vers vous sous 24&nbsp;h avec un avis honnête et concret. Une question urgente&nbsp;? Écrivez-nous à <a href="mailto:contact@digitran.ch">contact@digitran.ch</a>.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-wiz-close>Parfait, fermer</button>
+          </div>
+
+          <!-- ===== Barre d'actions ===== -->
+          <div class="wiz-actions" id="wiz-actions">
+            <button type="button" class="wiz-back" id="wiz-back">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.8 18.8 4 12l6.8-6.8 1.5 1.4L7 11h13v2H7l5.3 4.4z"/></svg>
+              Retour
+            </button>
+            <button type="button" class="btn btn-primary wiz-next" id="wiz-next">
+              Continuer
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 5.2 19.9 12l-6.7 6.8-1.5-1.4 4.3-4.4H4v-2h12l-4.3-4.4z"/></svg>
+            </button>
+            <button type="submit" class="btn btn-primary wiz-submit" id="wiz-submit">
+              Envoyer ma demande
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
