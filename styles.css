@@ -624,7 +624,7 @@ html.js body.is-loaded .chip-c { transition-delay: 1.34s; }
    ============================================================ */
 .works { background: var(--bg); }
 
-.works-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.works-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 
 .work-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg);
@@ -634,15 +634,17 @@ html.js body.is-loaded .chip-c { transition-delay: 1.34s; }
 .work-card:hover { translate: 0 -8px; box-shadow: var(--shadow-lg); }
 
 .work-visual {
-  padding: 34px 34px 0; height: 250px; overflow: hidden; position: relative;
+  padding: 24px 24px 0; height: 195px; overflow: hidden; position: relative;
 }
-.work-visual-leso { background: linear-gradient(150deg, #E8ECFA 0%, #D7DEF4 100%); }
-.work-visual-foot { background: linear-gradient(150deg, #FBE9E5 0%, #F6D8D2 100%); }
+.work-visual-leso  { background: linear-gradient(150deg, #E8ECFA 0%, #D7DEF4 100%); }
+.work-visual-bio   { background: linear-gradient(150deg, #E3F3EB 0%, #CFE7DA 100%); }
+.work-visual-devis { background: linear-gradient(150deg, #FBF1DD 0%, #F6E6C6 100%); }
+.work-visual-foot  { background: linear-gradient(150deg, #FBE9E5 0%, #F6D8D2 100%); }
 
 .mock-window {
   background: #fff; border-radius: 14px 14px 0 0;
   box-shadow: 0 18px 50px rgba(19, 27, 61, 0.16);
-  padding: 16px 18px; height: 100%;
+  padding: 14px 16px; height: 100%;
   transition: transform 0.5s var(--ease-out);
 }
 .work-card:hover .mock-window { transform: translateY(-9px); }
@@ -651,7 +653,7 @@ html.js body.is-loaded .chip-c { transition-delay: 1.34s; }
 .mock-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
 .mock-bar i:first-child { background: var(--red); }
 
-.mock-title { font-weight: 600; font-size: 0.92rem; color: var(--navy); margin-bottom: 12px; }
+.mock-title { font-weight: 600; font-size: 0.85rem; color: var(--navy); margin-bottom: 11px; }
 
 .mock-line {
   height: 9px; border-radius: 99px; margin-bottom: 9px;
@@ -685,30 +687,39 @@ html.js body.is-loaded .chip-c { transition-delay: 1.34s; }
   font-size: 0.8rem; font-weight: 600; border-radius: 99px; padding: 5px 12px;
 }
 
-.work-body { padding: 28px 34px 34px; }
-.work-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-.work-tags span {
-  font-size: 0.78rem; font-weight: 600; color: var(--navy);
-  background: rgba(31, 42, 82, 0.07); border-radius: 99px; padding: 5px 13px;
+.mock-invoice { display: grid; gap: 7px; margin-top: 4px; font-size: 0.85rem; color: var(--ink); }
+.mock-invoice li { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.mock-invoice b { color: var(--navy); font-weight: 600; font-variant-numeric: tabular-nums; }
+.mock-invoice .total {
+  margin-top: 3px; padding-top: 8px; border-top: 1px solid var(--line);
+  font-weight: 600; color: var(--navy);
 }
-.work-body h3 { font-size: 1.5rem; margin-bottom: 10px; }
-.work-body p { color: var(--muted); font-size: 1rem; }
+.mock-invoice .total b { color: var(--red); }
+
+.work-body { padding: 22px 26px 26px; }
+.work-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 11px; }
+.work-tags span {
+  font-size: 0.74rem; font-weight: 600; color: var(--navy);
+  background: rgba(31, 42, 82, 0.07); border-radius: 99px; padding: 4px 11px;
+}
+.work-body h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.work-body p { color: var(--muted); font-size: 0.94rem; }
 
 .work-card-cta {
   grid-column: 1 / -1;
   border: 2px dashed rgba(31, 42, 82, 0.25); background: transparent;
   align-items: center; justify-content: center; text-align: center;
-  padding: 52px 30px;
+  padding: 40px 28px;
   transition: border-color 0.35s ease, background-color 0.35s ease, translate 0.4s var(--ease-out), box-shadow 0.4s ease;
 }
 .work-card-cta:hover { border-color: var(--red); background: #fff; }
-.work-cta-inner { max-width: 460px; display: grid; justify-items: center; gap: 10px; }
+.work-cta-inner { max-width: 460px; display: grid; justify-items: center; gap: 9px; }
 .work-plus {
-  font-family: var(--font-head); font-size: 2.6rem; font-weight: 600; line-height: 1;
+  font-family: var(--font-head); font-size: 2.3rem; font-weight: 600; line-height: 1;
   color: var(--red); transition: transform 0.4s var(--ease-out);
 }
 .work-card-cta:hover .work-plus { transform: rotate(90deg) scale(1.15); }
-.work-card-cta h3 { font-size: 1.45rem; }
+.work-card-cta h3 { font-size: 1.3rem; }
 .work-card-cta p { color: var(--muted); }
 
 /* ============================================================
